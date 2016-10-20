@@ -1,6 +1,6 @@
 # name: discourse-delete-user-by-email
 # about: Support delete user from group by using user email
-# version: 0.1
+# version: 0.2
 # authors: Ming
 # url: https://github.com/ming-relax/discourse-delete-user-by-email
 
