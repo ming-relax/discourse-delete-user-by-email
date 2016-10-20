@@ -15,7 +15,7 @@ after_initialize do
       elsif params[:username].present?
         user = User.find_by_username(params[:username])
       elsif params[:user_email].present?
-        user = User.find_by_user_email(params[:user_email])
+        user = User.find_by_email(params[:user_email])
       else
         raise Discourse::InvalidParameters.new('user_id or username or user_email must be present')
       end
