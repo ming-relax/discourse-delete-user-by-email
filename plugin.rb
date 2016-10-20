@@ -1,11 +1,11 @@
 # name: discourse-delete-user-by-email
 # about: Support delete user from group by using user email
-# version: 0.2
+# version: 0.3
 # authors: Ming
 # url: https://github.com/ming-relax/discourse-delete-user-by-email
 
 after_initialize do
-  class GroupsController
+  class ::GroupsController
     def remove_member
       group = Group.find(params[:id])
       guardian.ensure_can_edit!(group)
